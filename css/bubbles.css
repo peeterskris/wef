@@ -1,0 +1,37 @@
+body{
+    margin: 20px;
+}
+
+svg{
+    width: 800px;
+    height: 400px;
+    margin: 20px;
+}
+
+g#axes line {
+    stroke-width:1;
+    stroke:#BBB;
+    stroke-dasharray: 1,3;
+}
+
+g#bubbles circle {
+    opacity: 1;
+    stroke-width:1;
+    stroke:black;
+}
+
+g#bubbles circle:hover {
+    stroke-width:3;
+}
+
+g#bubbles text {
+    text-anchor:middle;
+    alignment-baseline:middle;
+    opacity:0;
+    pointer-events:all;
+    transition:1s;
+}
+g#bubbles text:hover {
+    opacity:1;
+}
+
