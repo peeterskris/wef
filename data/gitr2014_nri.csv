@@ -1,152 +1,454 @@
-Edition,Entity_code,Entity,GLOBAL_ID,Series_with_units,Rank,Value,Date_description,Note,Source,Source_date
-2014,AGO,Angola,NRI,Networked Readiness Index (1-7),144,2.5184885778,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ALB,Albania,NRI,Networked Readiness Index (1-7),95,3.6638228019,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ARE,United Arab Emirates,NRI,Networked Readiness Index (1-7),24,5.1989004455,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ARG,Argentina,NRI,Networked Readiness Index (1-7),100,3.5299445303,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ARM,Armenia,NRI,Networked Readiness Index (1-7),65,4.0285195196,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,AUS,Australia,NRI,Networked Readiness Index (1-7),18,5.3968963375,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,AUT,Austria,NRI,Networked Readiness Index (1-7),22,5.2616798254,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,AZE,Azerbaijan,NRI,Networked Readiness Index (1-7),49,4.3109011634,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BDI,Burundi,NRI,Networked Readiness Index (1-7),147,2.3060043816,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BEL,Belgium,NRI,Networked Readiness Index (1-7),27,5.0618945691,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BEN,Benin,NRI,Networked Readiness Index (1-7),135,2.8230118224,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BFA,Burkina Faso,NRI,Networked Readiness Index (1-7),136,2.781788976,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BGD,Bangladesh,NRI,Networked Readiness Index (1-7),119,3.2116453846,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BGR,Bulgaria,NRI,Networked Readiness Index (1-7),73,3.9579068176,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BHR,Bahrain,NRI,Networked Readiness Index (1-7),29,4.8579534848,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BIH,Bosnia and Herzegovina,NRI,Networked Readiness Index (1-7),68,3.9850927095,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BLZ,Belize,NRI,Networked Readiness Index (1-7),,,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BOL,Bolivia,NRI,Networked Readiness Index (1-7),120,3.2078167589,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BRA,Brazil,NRI,Networked Readiness Index (1-7),69,3.9815309261,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BRB,Barbados,NRI,Networked Readiness Index (1-7),55,4.2242007118,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BRN,Brunei Darussalam,NRI,Networked Readiness Index (1-7),45,4.3407839718,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BTN,Bhutan,NRI,Networked Readiness Index (1-7),94,3.6799700885,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,BWA,Botswana,NRI,Networked Readiness Index (1-7),103,3.4334094319,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CAN,Canada,NRI,Networked Readiness Index (1-7),17,5.4075158175,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CHE,Switzerland,NRI,Networked Readiness Index (1-7),6,5.6244423303,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CHL,Chile,NRI,Networked Readiness Index (1-7),35,4.6082827475,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CHN,China,NRI,Networked Readiness Index (1-7),62,4.0513482622,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CIV,Côte d'Ivoire,NRI,Networked Readiness Index (1-7),122,3.1354430369,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CMR,Cameroon,NRI,Networked Readiness Index (1-7),131,2.9436636262,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,COL,Colombia,NRI,Networked Readiness Index (1-7),63,4.0490661717,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CPV,Cape Verde,NRI,Networked Readiness Index (1-7),89,3.7337030776,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CRI,Costa Rica,NRI,Networked Readiness Index (1-7),53,4.2472254248,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CYP,Cyprus,NRI,Networked Readiness Index (1-7),37,4.5956768576,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,CZE,Czech Republic,NRI,Networked Readiness Index (1-7),42,4.4874935683,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,DEU,Germany,NRI,Networked Readiness Index (1-7),12,5.4999792009,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,DNK,Denmark,NRI,Networked Readiness Index (1-7),13,5.495961723,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,DOM,Dominican Republic,NRI,Networked Readiness Index (1-7),93,3.6915793365,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,DZA,Algeria,NRI,Networked Readiness Index (1-7),129,2.9828233449,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ECU,Ecuador,NRI,Networked Readiness Index (1-7),82,3.8546565322,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,EGY,Egypt,NRI,Networked Readiness Index (1-7),91,3.7126210461,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ESP,Spain,NRI,Networked Readiness Index (1-7),34,4.6868602298,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,EST,Estonia,NRI,Networked Readiness Index (1-7),21,5.2684752964,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ETH,Ethiopia,NRI,Networked Readiness Index (1-7),130,2.9493339847,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,FIN,Finland,NRI,Networked Readiness Index (1-7),1,6.0362806076,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,FRA,France,NRI,Networked Readiness Index (1-7),25,5.0870695152,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GAB,Gabon,NRI,Networked Readiness Index (1-7),128,2.9848027517,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GBR,United Kingdom,NRI,Networked Readiness Index (1-7),9,5.5437607374,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GEO,Georgia,NRI,Networked Readiness Index (1-7),60,4.0920566008,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GHA,Ghana,NRI,Networked Readiness Index (1-7),96,3.6473434906,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GIN,Guinea,NRI,Networked Readiness Index (1-7),145,2.4836747858,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GMB,"Gambia, The",NRI,Networked Readiness Index (1-7),107,3.382436715,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GRC,Greece,NRI,Networked Readiness Index (1-7),74,3.9497148685,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GTM,Guatemala,NRI,Networked Readiness Index (1-7),101,3.5210069262,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,GUY,Guyana,NRI,Networked Readiness Index (1-7),88,3.767317522,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,HKG,Hong Kong SAR,NRI,Networked Readiness Index (1-7),8,5.5994452466,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,HND,Honduras,NRI,Networked Readiness Index (1-7),116,3.2385437898,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,HRV,Croatia,NRI,Networked Readiness Index (1-7),46,4.3381854897,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,HTI,Haiti,NRI,Networked Readiness Index (1-7),143,2.521997459,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,HUN,Hungary,NRI,Networked Readiness Index (1-7),47,4.3200118135,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,IDN,Indonesia,NRI,Networked Readiness Index (1-7),64,4.0405558354,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,IND,India,NRI,Networked Readiness Index (1-7),83,3.8466710775,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,IRL,Ireland,NRI,Networked Readiness Index (1-7),26,5.0663348895,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,IRN,"Iran, Islamic Rep.",NRI,Networked Readiness Index (1-7),104,3.4188459128,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ISL,Iceland,NRI,Networked Readiness Index (1-7),19,5.303444573,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ISR,Israel,NRI,Networked Readiness Index (1-7),15,5.4248819967,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ITA,Italy,NRI,Networked Readiness Index (1-7),58,4.175924653,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,JAM,Jamaica,NRI,Networked Readiness Index (1-7),86,3.7724100165,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,JOR,Jordan,NRI,Networked Readiness Index (1-7),44,4.361906462,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,JPN,Japan,NRI,Networked Readiness Index (1-7),16,5.41025285,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,KAZ,Kazakhstan,NRI,Networked Readiness Index (1-7),38,4.5824247961,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,KEN,Kenya,NRI,Networked Readiness Index (1-7),92,3.7103682498,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,KGZ,Kyrgyz Republic,NRI,Networked Readiness Index (1-7),118,3.2152272497,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,KHM,Cambodia,NRI,Networked Readiness Index (1-7),108,3.3618368453,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,KOR,"Korea, Rep.",NRI,Networked Readiness Index (1-7),10,5.5424564707,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,KWT,Kuwait,NRI,Networked Readiness Index (1-7),72,3.9623735568,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LAO,Lao PDR,NRI,Networked Readiness Index (1-7),109,3.3385591702,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LBN,Lebanon,NRI,Networked Readiness Index (1-7),97,3.6436480177,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LBR,Liberia,NRI,Networked Readiness Index (1-7),121,3.1883240976,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LBY,Libya,NRI,Networked Readiness Index (1-7),138,2.7457121306,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LKA,Sri Lanka,NRI,Networked Readiness Index (1-7),76,3.9356887435,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LSO,Lesotho,NRI,Networked Readiness Index (1-7),133,2.8838126073,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LTU,Lithuania,NRI,Networked Readiness Index (1-7),31,4.7840387936,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LUX,Luxembourg,NRI,Networked Readiness Index (1-7),11,5.5301281033,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,LVA,Latvia,NRI,Networked Readiness Index (1-7),39,4.5818676588,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MAR,Morocco,NRI,Networked Readiness Index (1-7),99,3.6065645107,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MDA,Moldova,NRI,Networked Readiness Index (1-7),77,3.8932421347,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MDG,Madagascar,NRI,Networked Readiness Index (1-7),139,2.7375180368,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MEX,Mexico,NRI,Networked Readiness Index (1-7),79,3.8884015596,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MKD,"Macedonia, FYR",NRI,Networked Readiness Index (1-7),57,4.1934613848,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MLI,Mali,NRI,Networked Readiness Index (1-7),127,2.9968831157,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MLT,Malta,NRI,Networked Readiness Index (1-7),28,4.9632648693,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MMR,Myanmar,NRI,Networked Readiness Index (1-7),146,2.3493181678,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MNE,Montenegro,NRI,Networked Readiness Index (1-7),52,4.2690550302,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MNG,Mongolia,NRI,Networked Readiness Index (1-7),61,4.0724874028,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MOZ,Mozambique,NRI,Networked Readiness Index (1-7),137,2.7741439145,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MRT,Mauritania,NRI,Networked Readiness Index (1-7),142,2.6120943332,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MUS,Mauritius,NRI,Networked Readiness Index (1-7),48,4.314352118,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MWI,Malawi,NRI,Networked Readiness Index (1-7),132,2.9032165504,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,MYS,Malaysia,NRI,Networked Readiness Index (1-7),30,4.8290820751,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,NAM,Namibia,NRI,Networked Readiness Index (1-7),105,3.4122013349,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,NGA,Nigeria,NRI,Networked Readiness Index (1-7),112,3.3119251996,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,NIC,Nicaragua,NRI,Networked Readiness Index (1-7),124,3.0829491088,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,NLD,Netherlands,NRI,Networked Readiness Index (1-7),4,5.7904540737,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,NOR,Norway,NRI,Networked Readiness Index (1-7),5,5.7048157834,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,NPL,Nepal,NRI,Networked Readiness Index (1-7),123,3.0941273838,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,NZL,New Zealand,NRI,Networked Readiness Index (1-7),20,5.2688875541,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,OMN,Oman,NRI,Networked Readiness Index (1-7),40,4.5580852477,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,PAK,Pakistan,NRI,Networked Readiness Index (1-7),111,3.327323646,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,PAN,Panama,NRI,Networked Readiness Index (1-7),43,4.3641318236,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,PER,Peru,NRI,Networked Readiness Index (1-7),90,3.7283988476,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,PHL,Philippines,NRI,Networked Readiness Index (1-7),78,3.8915283709,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,POL,Poland,NRI,Networked Readiness Index (1-7),54,4.2424919333,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,PRI,Puerto Rico,NRI,Networked Readiness Index (1-7),41,4.5417652426,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,PRT,Portugal,NRI,Networked Readiness Index (1-7),33,4.7254850295,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,PRY,Paraguay,NRI,Networked Readiness Index (1-7),102,3.4731200312,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,QAT,Qatar,NRI,Networked Readiness Index (1-7),23,5.2215494566,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ROU,Romania,NRI,Networked Readiness Index (1-7),75,3.9480902054,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,RUS,Russian Federation,NRI,Networked Readiness Index (1-7),50,4.3039300687,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,RWA,Rwanda,NRI,Networked Readiness Index (1-7),85,3.7795299956,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SAU,Saudi Arabia,NRI,Networked Readiness Index (1-7),32,4.7839773696,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SEN,Senegal,NRI,Networked Readiness Index (1-7),114,3.296411631,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SGP,Singapore,NRI,Networked Readiness Index (1-7),2,5.9675434628,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SLE,Sierra Leone,NRI,Networked Readiness Index (1-7),134,2.8506422022,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SLV,El Salvador,NRI,Networked Readiness Index (1-7),98,3.6298063188,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SRB,Serbia,NRI,Networked Readiness Index (1-7),80,3.8827278184,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SUR,Suriname,NRI,Networked Readiness Index (1-7),113,3.302756934,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SVK,Slovak Republic,NRI,Networked Readiness Index (1-7),59,4.1151933257,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SVN,Slovenia,NRI,Networked Readiness Index (1-7),36,4.5972060723,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SWE,Sweden,NRI,Networked Readiness Index (1-7),3,5.9299052098,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SWZ,Swaziland,NRI,Networked Readiness Index (1-7),126,3.0030981645,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SYC,Seychelles,NRI,Networked Readiness Index (1-7),66,4.0228429668,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,SYR,Syria,NRI,Networked Readiness Index (1-7),,,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,TCD,Chad,NRI,Networked Readiness Index (1-7),148,2.2237677956,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,THA,Thailand,NRI,Networked Readiness Index (1-7),67,4.0064705761,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,TJK,Tajikistan,NRI,Networked Readiness Index (1-7),,,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,TLS,Timor-leste,NRI,Networked Readiness Index (1-7),141,2.6913273904,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,TTO,Trinidad and Tobago,NRI,Networked Readiness Index (1-7),71,3.9728957052,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,TUN,Tunisia,NRI,Networked Readiness Index (1-7),87,3.7711375232,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,TUR,Turkey,NRI,Networked Readiness Index (1-7),51,4.2966285544,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,TWN,"Taiwan, China",NRI,Networked Readiness Index (1-7),14,5.4717609096,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,TZA,Tanzania,NRI,Networked Readiness Index (1-7),125,3.0385120675,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,UGA,Uganda,NRI,Networked Readiness Index (1-7),115,3.2537455821,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,UKR,Ukraine,NRI,Networked Readiness Index (1-7),81,3.8685868482,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,URY,Uruguay,NRI,Networked Readiness Index (1-7),56,4.2179846642,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,USA,United States,NRI,Networked Readiness Index (1-7),7,5.6138370753,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,VEN,Venezuela,NRI,Networked Readiness Index (1-7),106,3.3926930434,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,VNM,Vietnam,NRI,Networked Readiness Index (1-7),84,3.8362233133,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,YEM,Yemen,NRI,Networked Readiness Index (1-7),140,2.7311018914,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ZAF,South Africa,NRI,Networked Readiness Index (1-7),70,3.9756260071,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ZMB,Zambia,NRI,Networked Readiness Index (1-7),110,3.3385381499,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
-2014,ZWE,Zimbabwe,NRI,Networked Readiness Index (1-7),117,3.2378150519,2014 edition,Refer to Chapter 1.1 of The Global Information Technology 2014 for details about the computation methodology,World Economic Forum;The Global Information Technology Report 2014; www.weforum.org/gcr,22/04/2014
+Edition,Entity_code,Entity,GLOBAL_ID,Series_with_units,Rank,Value
+2012,AGO,Angola,NRI,Networked Readiness Index (1-7),140,2.4908802374
+2013,AGO,Angola,NRI,Networked Readiness Index (1-7),,
+2014,AGO,Angola,NRI,Networked Readiness Index (1-7),144,2.5184885778
+2012,ALB,Albania,NRI,Networked Readiness Index (1-7),68,3.894909204
+2013,ALB,Albania,NRI,Networked Readiness Index (1-7),83,3.7519728833
+2014,ALB,Albania,NRI,Networked Readiness Index (1-7),95,3.6638228019
+2012,ARE,United Arab Emirates,NRI,Networked Readiness Index (1-7),30,4.7667125559
+2013,ARE,United Arab Emirates,NRI,Networked Readiness Index (1-7),25,5.0723126362
+2014,ARE,United Arab Emirates,NRI,Networked Readiness Index (1-7),24,5.1989004455
+2012,ARG,Argentina,NRI,Networked Readiness Index (1-7),92,3.5197841414
+2013,ARG,Argentina,NRI,Networked Readiness Index (1-7),99,3.4718111576
+2014,ARG,Argentina,NRI,Networked Readiness Index (1-7),100,3.5299445303
+2012,ARM,Armenia,NRI,Networked Readiness Index (1-7),94,3.4921483611
+2013,ARM,Armenia,NRI,Networked Readiness Index (1-7),82,3.7621651853
+2014,ARM,Armenia,NRI,Networked Readiness Index (1-7),65,4.0285195196
+2012,AUS,Australia,NRI,Networked Readiness Index (1-7),17,5.289109786
+2013,AUS,Australia,NRI,Networked Readiness Index (1-7),18,5.2573245403
+2014,AUS,Australia,NRI,Networked Readiness Index (1-7),18,5.3968963375
+2012,AUT,Austria,NRI,Networked Readiness Index (1-7),19,5.2541141664
+2013,AUT,Austria,NRI,Networked Readiness Index (1-7),19,5.2494264008
+2014,AUT,Austria,NRI,Networked Readiness Index (1-7),22,5.2616798254
+2012,AZE,Azerbaijan,NRI,Networked Readiness Index (1-7),61,3.9497947224
+2013,AZE,Azerbaijan,NRI,Networked Readiness Index (1-7),56,4.113763362
+2014,AZE,Azerbaijan,NRI,Networked Readiness Index (1-7),49,4.3109011634
+2012,BDI,Burundi,NRI,Networked Readiness Index (1-7),137,2.5733467113
+2013,BDI,Burundi,NRI,Networked Readiness Index (1-7),144,2.304823954
+2014,BDI,Burundi,NRI,Networked Readiness Index (1-7),147,2.3060043816
+2012,BEL,Belgium,NRI,Networked Readiness Index (1-7),22,5.1322223796
+2013,BEL,Belgium,NRI,Networked Readiness Index (1-7),24,5.0989779847
+2014,BEL,Belgium,NRI,Networked Readiness Index (1-7),27,5.0618945691
+2012,BEN,Benin,NRI,Networked Readiness Index (1-7),117,3.0484229209
+2013,BEN,Benin,NRI,Networked Readiness Index (1-7),123,2.9685981887
+2014,BEN,Benin,NRI,Networked Readiness Index (1-7),135,2.8230118224
+2012,BFA,Burkina Faso,NRI,Networked Readiness Index (1-7),135,2.7229194803
+2013,BFA,Burkina Faso,NRI,Networked Readiness Index (1-7),130,2.7960249154
+2014,BFA,Burkina Faso,NRI,Networked Readiness Index (1-7),136,2.781788976
+2012,BGD,Bangladesh,NRI,Networked Readiness Index (1-7),113,3.200297551
+2013,BGD,Bangladesh,NRI,Networked Readiness Index (1-7),114,3.2195100096
+2014,BGD,Bangladesh,NRI,Networked Readiness Index (1-7),119,3.2116453846
+2012,BGR,Bulgaria,NRI,Networked Readiness Index (1-7),70,3.8915878867
+2013,BGR,Bulgaria,NRI,Networked Readiness Index (1-7),71,3.8692438825
+2014,BGR,Bulgaria,NRI,Networked Readiness Index (1-7),73,3.9579068176
+2012,BHR,Bahrain,NRI,Networked Readiness Index (1-7),27,4.898548412
+2013,BHR,Bahrain,NRI,Networked Readiness Index (1-7),29,4.829344231
+2014,BHR,Bahrain,NRI,Networked Readiness Index (1-7),29,4.8579534848
+2012,BIH,Bosnia and Herzegovina,NRI,Networked Readiness Index (1-7),84,3.6521874699
+2013,BIH,Bosnia and Herzegovina,NRI,Networked Readiness Index (1-7),78,3.8039546221
+2014,BIH,Bosnia and Herzegovina,NRI,Networked Readiness Index (1-7),68,3.9850927095
+2012,BLZ,Belize,NRI,Networked Readiness Index (1-7),119,3.0137120298
+2013,BLZ,Belize,NRI,Networked Readiness Index (1-7),,
+2014,BLZ,Belize,NRI,Networked Readiness Index (1-7),,
+2012,BOL,Bolivia,NRI,Networked Readiness Index (1-7),127,2.9217883872
+2013,BOL,Bolivia,NRI,Networked Readiness Index (1-7),119,3.0101321592
+2014,BOL,Bolivia,NRI,Networked Readiness Index (1-7),120,3.2078167589
+2012,BRA,Brazil,NRI,Networked Readiness Index (1-7),65,3.9161523532
+2013,BRA,Brazil,NRI,Networked Readiness Index (1-7),60,3.9694659805
+2014,BRA,Brazil,NRI,Networked Readiness Index (1-7),69,3.9815309261
+2012,BRB,Barbados,NRI,Networked Readiness Index (1-7),35,4.6099678712
+2013,BRB,Barbados,NRI,Networked Readiness Index (1-7),39,4.4933812282
+2014,BRB,Barbados,NRI,Networked Readiness Index (1-7),55,4.2242007118
+2012,BRN,Brunei Darussalam,NRI,Networked Readiness Index (1-7),54,4.0389198915
+2013,BRN,Brunei Darussalam,NRI,Networked Readiness Index (1-7),57,4.1077720837
+2014,BRN,Brunei Darussalam,NRI,Networked Readiness Index (1-7),45,4.3407839718
+2012,BTN,Bhutan,NRI,Networked Readiness Index (1-7),,
+2013,BTN,Bhutan,NRI,Networked Readiness Index (1-7),,
+2014,BTN,Bhutan,NRI,Networked Readiness Index (1-7),94,3.6799700885
+2012,BWA,Botswana,NRI,Networked Readiness Index (1-7),89,3.5832412971
+2013,BWA,Botswana,NRI,Networked Readiness Index (1-7),96,3.4984234611
+2014,BWA,Botswana,NRI,Networked Readiness Index (1-7),103,3.4334094319
+2012,CAN,Canada,NRI,Networked Readiness Index (1-7),9,5.5053639714
+2013,CAN,Canada,NRI,Networked Readiness Index (1-7),12,5.4421433984
+2014,CAN,Canada,NRI,Networked Readiness Index (1-7),17,5.4075158175
+2012,CHE,Switzerland,NRI,Networked Readiness Index (1-7),5,5.6143995721
+2013,CHE,Switzerland,NRI,Networked Readiness Index (1-7),6,5.6571919429
+2014,CHE,Switzerland,NRI,Networked Readiness Index (1-7),6,5.6244423303
+2012,CHL,Chile,NRI,Networked Readiness Index (1-7),39,4.4392520521
+2013,CHL,Chile,NRI,Networked Readiness Index (1-7),34,4.5939091217
+2014,CHL,Chile,NRI,Networked Readiness Index (1-7),35,4.6082827475
+2012,CHN,China,NRI,Networked Readiness Index (1-7),51,4.1119467356
+2013,CHN,China,NRI,Networked Readiness Index (1-7),58,4.0318248373
+2014,CHN,China,NRI,Networked Readiness Index (1-7),62,4.0513482622
+2012,CIV,Côte d'Ivoire,NRI,Networked Readiness Index (1-7),122,2.9782805721
+2013,CIV,Côte d'Ivoire,NRI,Networked Readiness Index (1-7),120,2.9972086729
+2014,CIV,Côte d'Ivoire,NRI,Networked Readiness Index (1-7),122,3.1354430369
+2012,CMR,Cameroon,NRI,Networked Readiness Index (1-7),125,2.9348132638
+2013,CMR,Cameroon,NRI,Networked Readiness Index (1-7),124,2.9497084065
+2014,CMR,Cameroon,NRI,Networked Readiness Index (1-7),131,2.9436636262
+2012,COL,Colombia,NRI,Networked Readiness Index (1-7),73,3.869029393
+2013,COL,Colombia,NRI,Networked Readiness Index (1-7),66,3.9087774928
+2014,COL,Colombia,NRI,Networked Readiness Index (1-7),63,4.0490661717
+2012,CPV,Cape Verde,NRI,Networked Readiness Index (1-7),81,3.7115592749
+2013,CPV,Cape Verde,NRI,Networked Readiness Index (1-7),81,3.7782262012
+2014,CPV,Cape Verde,NRI,Networked Readiness Index (1-7),89,3.7337030776
+2012,CRI,Costa Rica,NRI,Networked Readiness Index (1-7),58,4.0041473061
+2013,CRI,Costa Rica,NRI,Networked Readiness Index (1-7),53,4.1494046301
+2014,CRI,Costa Rica,NRI,Networked Readiness Index (1-7),53,4.2472254248
+2012,CYP,Cyprus,NRI,Networked Readiness Index (1-7),32,4.6601127471
+2013,CYP,Cyprus,NRI,Networked Readiness Index (1-7),35,4.5931048714
+2014,CYP,Cyprus,NRI,Networked Readiness Index (1-7),37,4.5956768576
+2012,CZE,Czech Republic,NRI,Networked Readiness Index (1-7),42,4.3320903819
+2013,CZE,Czech Republic,NRI,Networked Readiness Index (1-7),42,4.3769486915
+2014,CZE,Czech Republic,NRI,Networked Readiness Index (1-7),42,4.4874935683
+2012,DEU,Germany,NRI,Networked Readiness Index (1-7),16,5.3244956449
+2013,DEU,Germany,NRI,Networked Readiness Index (1-7),13,5.4269212472
+2014,DEU,Germany,NRI,Networked Readiness Index (1-7),12,5.4999792009
+2012,DNK,Denmark,NRI,Networked Readiness Index (1-7),4,5.6969785755
+2013,DNK,Denmark,NRI,Networked Readiness Index (1-7),8,5.5785379935
+2014,DNK,Denmark,NRI,Networked Readiness Index (1-7),13,5.495961723
+2012,DOM,Dominican Republic,NRI,Networked Readiness Index (1-7),87,3.6046855057
+2013,DOM,Dominican Republic,NRI,Networked Readiness Index (1-7),90,3.6187998719
+2014,DOM,Dominican Republic,NRI,Networked Readiness Index (1-7),93,3.6915793365
+2012,DZA,Algeria,NRI,Networked Readiness Index (1-7),118,3.0142871676
+2013,DZA,Algeria,NRI,Networked Readiness Index (1-7),131,2.7827750911
+2014,DZA,Algeria,NRI,Networked Readiness Index (1-7),129,2.9828233449
+2012,ECU,Ecuador,NRI,Networked Readiness Index (1-7),96,3.4561289167
+2013,ECU,Ecuador,NRI,Networked Readiness Index (1-7),91,3.5755186254
+2014,ECU,Ecuador,NRI,Networked Readiness Index (1-7),82,3.8546565322
+2012,EGY,Egypt,NRI,Networked Readiness Index (1-7),79,3.7660590757
+2013,EGY,Egypt,NRI,Networked Readiness Index (1-7),80,3.7793841887
+2014,EGY,Egypt,NRI,Networked Readiness Index (1-7),91,3.7126210461
+2012,ESP,Spain,NRI,Networked Readiness Index (1-7),38,4.540381274
+2013,ESP,Spain,NRI,Networked Readiness Index (1-7),38,4.5050742385
+2014,ESP,Spain,NRI,Networked Readiness Index (1-7),34,4.6868602298
+2012,EST,Estonia,NRI,Networked Readiness Index (1-7),24,5.0925594553
+2013,EST,Estonia,NRI,Networked Readiness Index (1-7),22,5.1166871238
+2014,EST,Estonia,NRI,Networked Readiness Index (1-7),21,5.2684752964
+2012,ETH,Ethiopia,NRI,Networked Readiness Index (1-7),130,2.85312248
+2013,ETH,Ethiopia,NRI,Networked Readiness Index (1-7),128,2.853040434
+2014,ETH,Ethiopia,NRI,Networked Readiness Index (1-7),130,2.9493339847
+2012,FIN,Finland,NRI,Networked Readiness Index (1-7),3,5.8069448815
+2013,FIN,Finland,NRI,Networked Readiness Index (1-7),1,5.9843531771
+2014,FIN,Finland,NRI,Networked Readiness Index (1-7),1,6.0362806076
+2012,FRA,France,NRI,Networked Readiness Index (1-7),23,5.1173203255
+2013,FRA,France,NRI,Networked Readiness Index (1-7),26,5.0558609585
+2014,FRA,France,NRI,Networked Readiness Index (1-7),25,5.0870695152
+2012,GAB,Gabon,NRI,Networked Readiness Index (1-7),,
+2013,GAB,Gabon,NRI,Networked Readiness Index (1-7),121,2.9717987716
+2014,GAB,Gabon,NRI,Networked Readiness Index (1-7),128,2.9848027517
+2012,GBR,United Kingdom,NRI,Networked Readiness Index (1-7),10,5.5000218964
+2013,GBR,United Kingdom,NRI,Networked Readiness Index (1-7),7,5.635390863
+2014,GBR,United Kingdom,NRI,Networked Readiness Index (1-7),9,5.5437607374
+2012,GEO,Georgia,NRI,Networked Readiness Index (1-7),88,3.5963908255
+2013,GEO,Georgia,NRI,Networked Readiness Index (1-7),65,3.9251906009
+2014,GEO,Georgia,NRI,Networked Readiness Index (1-7),60,4.0920566008
+2012,GHA,Ghana,NRI,Networked Readiness Index (1-7),97,3.4425399671
+2013,GHA,Ghana,NRI,Networked Readiness Index (1-7),95,3.5111737193
+2014,GHA,Ghana,NRI,Networked Readiness Index (1-7),96,3.6473434906
+2012,GIN,Guinea,NRI,Networked Readiness Index (1-7),,
+2013,GIN,Guinea,NRI,Networked Readiness Index (1-7),140,2.6098665305
+2014,GIN,Guinea,NRI,Networked Readiness Index (1-7),145,2.4836747858
+2012,GMB,"Gambia, The",NRI,Networked Readiness Index (1-7),101,3.4087975715
+2013,GMB,"Gambia, The",NRI,Networked Readiness Index (1-7),98,3.4719184297
+2014,GMB,"Gambia, The",NRI,Networked Readiness Index (1-7),107,3.382436715
+2012,GRC,Greece,NRI,Networked Readiness Index (1-7),59,3.9928485849
+2013,GRC,Greece,NRI,Networked Readiness Index (1-7),64,3.9263441148
+2014,GRC,Greece,NRI,Networked Readiness Index (1-7),74,3.9497148685
+2012,GTM,Guatemala,NRI,Networked Readiness Index (1-7),98,3.4314828099
+2013,GTM,Guatemala,NRI,Networked Readiness Index (1-7),102,3.4234548486
+2014,GTM,Guatemala,NRI,Networked Readiness Index (1-7),101,3.5210069262
+2012,GUY,Guyana,NRI,Networked Readiness Index (1-7),90,3.5810267755
+2013,GUY,Guyana,NRI,Networked Readiness Index (1-7),100,3.4478357163
+2014,GUY,Guyana,NRI,Networked Readiness Index (1-7),88,3.767317522
+2012,HKG,Hong Kong SAR,NRI,Networked Readiness Index (1-7),13,5.4580403676
+2013,HKG,Hong Kong SAR,NRI,Networked Readiness Index (1-7),14,5.4028004119
+2014,HKG,Hong Kong SAR,NRI,Networked Readiness Index (1-7),8,5.5994452466
+2012,HND,Honduras,NRI,Networked Readiness Index (1-7),99,3.4269601726
+2013,HND,Honduras,NRI,Networked Readiness Index (1-7),109,3.3163277608
+2014,HND,Honduras,NRI,Networked Readiness Index (1-7),116,3.2385437898
+2012,HRV,Croatia,NRI,Networked Readiness Index (1-7),45,4.2182569632
+2013,HRV,Croatia,NRI,Networked Readiness Index (1-7),51,4.1712281311
+2014,HRV,Croatia,NRI,Networked Readiness Index (1-7),46,4.3381854897
+2012,HTI,Haiti,NRI,Networked Readiness Index (1-7),142,2.2729648824
+2013,HTI,Haiti,NRI,Networked Readiness Index (1-7),141,2.5846005227
+2014,HTI,Haiti,NRI,Networked Readiness Index (1-7),143,2.521997459
+2012,HUN,Hungary,NRI,Networked Readiness Index (1-7),43,4.3001598443
+2013,HUN,Hungary,NRI,Networked Readiness Index (1-7),44,4.2930957288
+2014,HUN,Hungary,NRI,Networked Readiness Index (1-7),47,4.3200118135
+2012,IDN,Indonesia,NRI,Networked Readiness Index (1-7),80,3.7450113584
+2013,IDN,Indonesia,NRI,Networked Readiness Index (1-7),76,3.8422731916
+2014,IDN,Indonesia,NRI,Networked Readiness Index (1-7),64,4.0405558354
+2012,IND,India,NRI,Networked Readiness Index (1-7),69,3.893635903
+2013,IND,India,NRI,Networked Readiness Index (1-7),68,3.8823268555
+2014,IND,India,NRI,Networked Readiness Index (1-7),83,3.8466710775
+2012,IRL,Ireland,NRI,Networked Readiness Index (1-7),25,5.01545505
+2013,IRL,Ireland,NRI,Networked Readiness Index (1-7),27,5.0516218035
+2014,IRL,Ireland,NRI,Networked Readiness Index (1-7),26,5.0663348895
+2012,IRN,"Iran, Islamic Rep.",NRI,Networked Readiness Index (1-7),104,3.3612089879
+2013,IRN,"Iran, Islamic Rep.",NRI,Networked Readiness Index (1-7),101,3.4253966582
+2014,IRN,"Iran, Islamic Rep.",NRI,Networked Readiness Index (1-7),104,3.4188459128
+2012,ISL,Iceland,NRI,Networked Readiness Index (1-7),15,5.3274133209
+2013,ISL,Iceland,NRI,Networked Readiness Index (1-7),17,5.311313079
+2014,ISL,Iceland,NRI,Networked Readiness Index (1-7),19,5.303444573
+2012,ISR,Israel,NRI,Networked Readiness Index (1-7),20,5.2364350755
+2013,ISR,Israel,NRI,Networked Readiness Index (1-7),15,5.3865423126
+2014,ISR,Israel,NRI,Networked Readiness Index (1-7),15,5.4248819967
+2012,ITA,Italy,NRI,Networked Readiness Index (1-7),48,4.1689865823
+2013,ITA,Italy,NRI,Networked Readiness Index (1-7),50,4.1816240969
+2014,ITA,Italy,NRI,Networked Readiness Index (1-7),58,4.175924653
+2012,JAM,Jamaica,NRI,Networked Readiness Index (1-7),74,3.8586995898
+2013,JAM,Jamaica,NRI,Networked Readiness Index (1-7),85,3.7374087404
+2014,JAM,Jamaica,NRI,Networked Readiness Index (1-7),86,3.7724100165
+2012,JOR,Jordan,NRI,Networked Readiness Index (1-7),47,4.1746019195
+2013,JOR,Jordan,NRI,Networked Readiness Index (1-7),47,4.2013671313
+2014,JOR,Jordan,NRI,Networked Readiness Index (1-7),44,4.361906462
+2012,JPN,Japan,NRI,Networked Readiness Index (1-7),18,5.2549331111
+2013,JPN,Japan,NRI,Networked Readiness Index (1-7),21,5.239313633
+2014,JPN,Japan,NRI,Networked Readiness Index (1-7),16,5.41025285
+2012,KAZ,Kazakhstan,NRI,Networked Readiness Index (1-7),55,4.0253273938
+2013,KAZ,Kazakhstan,NRI,Networked Readiness Index (1-7),43,4.3195807961
+2014,KAZ,Kazakhstan,NRI,Networked Readiness Index (1-7),38,4.5824247961
+2012,KEN,Kenya,NRI,Networked Readiness Index (1-7),93,3.5144449103
+2013,KEN,Kenya,NRI,Networked Readiness Index (1-7),92,3.5387041478
+2014,KEN,Kenya,NRI,Networked Readiness Index (1-7),92,3.7103682498
+2012,KGZ,Kyrgyz Republic,NRI,Networked Readiness Index (1-7),115,3.1275285929
+2013,KGZ,Kyrgyz Republic,NRI,Networked Readiness Index (1-7),118,3.0895338527
+2014,KGZ,Kyrgyz Republic,NRI,Networked Readiness Index (1-7),118,3.2152272497
+2012,KHM,Cambodia,NRI,Networked Readiness Index (1-7),108,3.3162383938
+2013,KHM,Cambodia,NRI,Networked Readiness Index (1-7),106,3.3383904215
+2014,KHM,Cambodia,NRI,Networked Readiness Index (1-7),108,3.3618368453
+2012,KOR,"Korea, Rep.",NRI,Networked Readiness Index (1-7),12,5.4691439402
+2013,KOR,"Korea, Rep.",NRI,Networked Readiness Index (1-7),11,5.4567725659
+2014,KOR,"Korea, Rep.",NRI,Networked Readiness Index (1-7),10,5.5424564707
+2012,KWT,Kuwait,NRI,Networked Readiness Index (1-7),62,3.9495469526
+2013,KWT,Kuwait,NRI,Networked Readiness Index (1-7),62,3.935722188
+2014,KWT,Kuwait,NRI,Networked Readiness Index (1-7),72,3.9623735568
+2012,LAO,Lao PDR,NRI,Networked Readiness Index (1-7),,
+2013,LAO,Lao PDR,NRI,Networked Readiness Index (1-7),,
+2014,LAO,Lao PDR,NRI,Networked Readiness Index (1-7),109,3.3385591702
+2012,LBN,Lebanon,NRI,Networked Readiness Index (1-7),95,3.48901387
+2013,LBN,Lebanon,NRI,Networked Readiness Index (1-7),94,3.5255483888
+2014,LBN,Lebanon,NRI,Networked Readiness Index (1-7),97,3.6436480177
+2012,LBR,Liberia,NRI,Networked Readiness Index (1-7),,
+2013,LBR,Liberia,NRI,Networked Readiness Index (1-7),97,3.484917367
+2014,LBR,Liberia,NRI,Networked Readiness Index (1-7),121,3.1883240976
+2012,LBY,Libya,NRI,Networked Readiness Index (1-7),,
+2013,LBY,Libya,NRI,Networked Readiness Index (1-7),132,2.7665491079
+2014,LBY,Libya,NRI,Networked Readiness Index (1-7),138,2.7457121306
+2012,LKA,Sri Lanka,NRI,Networked Readiness Index (1-7),71,3.8836777829
+2013,LKA,Sri Lanka,NRI,Networked Readiness Index (1-7),69,3.881439064
+2014,LKA,Sri Lanka,NRI,Networked Readiness Index (1-7),76,3.9356887435
+2012,LSO,Lesotho,NRI,Networked Readiness Index (1-7),133,2.7750747671
+2013,LSO,Lesotho,NRI,Networked Readiness Index (1-7),138,2.6841354844
+2014,LSO,Lesotho,NRI,Networked Readiness Index (1-7),133,2.8838126073
+2012,LTU,Lithuania,NRI,Networked Readiness Index (1-7),31,4.6632572955
+2013,LTU,Lithuania,NRI,Networked Readiness Index (1-7),32,4.7179546769
+2014,LTU,Lithuania,NRI,Networked Readiness Index (1-7),31,4.7840387936
+2012,LUX,Luxembourg,NRI,Networked Readiness Index (1-7),21,5.2220888713
+2013,LUX,Luxembourg,NRI,Networked Readiness Index (1-7),16,5.3682079741
+2014,LUX,Luxembourg,NRI,Networked Readiness Index (1-7),11,5.5301281033
+2012,LVA,Latvia,NRI,Networked Readiness Index (1-7),41,4.3468866411
+2013,LVA,Latvia,NRI,Networked Readiness Index (1-7),41,4.4339645304
+2014,LVA,Latvia,NRI,Networked Readiness Index (1-7),39,4.5818676588
+2012,MAR,Morocco,NRI,Networked Readiness Index (1-7),91,3.5552977158
+2013,MAR,Morocco,NRI,Networked Readiness Index (1-7),89,3.6420027623
+2014,MAR,Morocco,NRI,Networked Readiness Index (1-7),99,3.6065645107
+2012,MDA,Moldova,NRI,Networked Readiness Index (1-7),78,3.7779739465
+2013,MDA,Moldova,NRI,Networked Readiness Index (1-7),77,3.8383182267
+2014,MDA,Moldova,NRI,Networked Readiness Index (1-7),77,3.8932421347
+2012,MDG,Madagascar,NRI,Networked Readiness Index (1-7),134,2.7251579804
+2013,MDG,Madagascar,NRI,Networked Readiness Index (1-7),137,2.6900339953
+2014,MDG,Madagascar,NRI,Networked Readiness Index (1-7),139,2.7375180368
+2012,MEX,Mexico,NRI,Networked Readiness Index (1-7),76,3.8236836126
+2013,MEX,Mexico,NRI,Networked Readiness Index (1-7),63,3.9291082542
+2014,MEX,Mexico,NRI,Networked Readiness Index (1-7),79,3.8884015596
+2012,MKD,"Macedonia, FYR",NRI,Networked Readiness Index (1-7),66,3.9089733293
+2013,MKD,"Macedonia, FYR",NRI,Networked Readiness Index (1-7),67,3.8867392128
+2014,MKD,"Macedonia, FYR",NRI,Networked Readiness Index (1-7),57,4.1934613848
+2012,MLI,Mali,NRI,Networked Readiness Index (1-7),126,2.9297154748
+2013,MLI,Mali,NRI,Networked Readiness Index (1-7),122,2.9713354837
+2014,MLI,Mali,NRI,Networked Readiness Index (1-7),127,2.9968831157
+2012,MLT,Malta,NRI,Networked Readiness Index (1-7),26,4.9077871513
+2013,MLT,Malta,NRI,Networked Readiness Index (1-7),28,4.9002736774
+2014,MLT,Malta,NRI,Networked Readiness Index (1-7),28,4.9632648693
+2012,MMR,Myanmar,NRI,Networked Readiness Index (1-7),,
+2013,MMR,Myanmar,NRI,Networked Readiness Index (1-7),,
+2014,MMR,Myanmar,NRI,Networked Readiness Index (1-7),146,2.3493181678
+2012,MNE,Montenegro,NRI,Networked Readiness Index (1-7),46,4.2164963774
+2013,MNE,Montenegro,NRI,Networked Readiness Index (1-7),48,4.1991392326
+2014,MNE,Montenegro,NRI,Networked Readiness Index (1-7),52,4.2690550302
+2012,MNG,Mongolia,NRI,Networked Readiness Index (1-7),63,3.9458852936
+2013,MNG,Mongolia,NRI,Networked Readiness Index (1-7),59,4.0094397855
+2014,MNG,Mongolia,NRI,Networked Readiness Index (1-7),61,4.0724874028
+2012,MOZ,Mozambique,NRI,Networked Readiness Index (1-7),120,2.98671418
+2013,MOZ,Mozambique,NRI,Networked Readiness Index (1-7),133,2.7642487363
+2014,MOZ,Mozambique,NRI,Networked Readiness Index (1-7),137,2.7741439145
+2012,MRT,Mauritania,NRI,Networked Readiness Index (1-7),139,2.546470701
+2013,MRT,Mauritania,NRI,Networked Readiness Index (1-7),135,2.7086021224
+2014,MRT,Mauritania,NRI,Networked Readiness Index (1-7),142,2.6120943332
+2012,MUS,Mauritius,NRI,Networked Readiness Index (1-7),53,4.0601376047
+2013,MUS,Mauritius,NRI,Networked Readiness Index (1-7),55,4.1239373317
+2014,MUS,Mauritius,NRI,Networked Readiness Index (1-7),48,4.314352118
+2012,MWI,Malawi,NRI,Networked Readiness Index (1-7),116,3.0544751477
+2013,MWI,Malawi,NRI,Networked Readiness Index (1-7),129,2.8287910461
+2014,MWI,Malawi,NRI,Networked Readiness Index (1-7),132,2.9032165504
+2012,MYS,Malaysia,NRI,Networked Readiness Index (1-7),29,4.7991498839
+2013,MYS,Malaysia,NRI,Networked Readiness Index (1-7),30,4.8232739989
+2014,MYS,Malaysia,NRI,Networked Readiness Index (1-7),30,4.8290820751
+2012,NAM,Namibia,NRI,Networked Readiness Index (1-7),105,3.3499285738
+2013,NAM,Namibia,NRI,Networked Readiness Index (1-7),111,3.29483705
+2014,NAM,Namibia,NRI,Networked Readiness Index (1-7),105,3.4122013349
+2012,NGA,Nigeria,NRI,Networked Readiness Index (1-7),112,3.2232898085
+2013,NGA,Nigeria,NRI,Networked Readiness Index (1-7),113,3.2656197919
+2014,NGA,Nigeria,NRI,Networked Readiness Index (1-7),112,3.3119251996
+2012,NIC,Nicaragua,NRI,Networked Readiness Index (1-7),131,2.8414702045
+2013,NIC,Nicaragua,NRI,Networked Readiness Index (1-7),125,2.9317606081
+2014,NIC,Nicaragua,NRI,Networked Readiness Index (1-7),124,3.0829491088
+2012,NLD,Netherlands,NRI,Networked Readiness Index (1-7),6,5.6025220396
+2013,NLD,Netherlands,NRI,Networked Readiness Index (1-7),4,5.8080819916
+2014,NLD,Netherlands,NRI,Networked Readiness Index (1-7),4,5.7904540737
+2012,NOR,Norway,NRI,Networked Readiness Index (1-7),7,5.592333085
+2013,NOR,Norway,NRI,Networked Readiness Index (1-7),5,5.6585817987
+2014,NOR,Norway,NRI,Networked Readiness Index (1-7),5,5.7048157834
+2012,NPL,Nepal,NRI,Networked Readiness Index (1-7),128,2.9209183324
+2013,NPL,Nepal,NRI,Networked Readiness Index (1-7),126,2.9306283294
+2014,NPL,Nepal,NRI,Networked Readiness Index (1-7),123,3.0941273838
+2012,NZL,New Zealand,NRI,Networked Readiness Index (1-7),14,5.3641585724
+2013,NZL,New Zealand,NRI,Networked Readiness Index (1-7),20,5.2482623409
+2014,NZL,New Zealand,NRI,Networked Readiness Index (1-7),20,5.2688875541
+2012,OMN,Oman,NRI,Networked Readiness Index (1-7),40,4.3527464231
+2013,OMN,Oman,NRI,Networked Readiness Index (1-7),40,4.4823606489
+2014,OMN,Oman,NRI,Networked Readiness Index (1-7),40,4.5580852477
+2012,PAK,Pakistan,NRI,Networked Readiness Index (1-7),102,3.3925983798
+2013,PAK,Pakistan,NRI,Networked Readiness Index (1-7),105,3.3463011063
+2014,PAK,Pakistan,NRI,Networked Readiness Index (1-7),111,3.327323646
+2012,PAN,Panama,NRI,Networked Readiness Index (1-7),57,4.0066710432
+2013,PAN,Panama,NRI,Networked Readiness Index (1-7),46,4.2209353365
+2014,PAN,Panama,NRI,Networked Readiness Index (1-7),43,4.3641318236
+2012,PER,Peru,NRI,Networked Readiness Index (1-7),106,3.3381270611
+2013,PER,Peru,NRI,Networked Readiness Index (1-7),103,3.3862936276
+2014,PER,Peru,NRI,Networked Readiness Index (1-7),90,3.7283988476
+2012,PHL,Philippines,NRI,Networked Readiness Index (1-7),86,3.6392550005
+2013,PHL,Philippines,NRI,Networked Readiness Index (1-7),86,3.7280550734
+2014,PHL,Philippines,NRI,Networked Readiness Index (1-7),78,3.8915283709
+2012,POL,Poland,NRI,Networked Readiness Index (1-7),49,4.1597559564
+2013,POL,Poland,NRI,Networked Readiness Index (1-7),49,4.1890314233
+2014,POL,Poland,NRI,Networked Readiness Index (1-7),54,4.2424919333
+2012,PRI,Puerto Rico,NRI,Networked Readiness Index (1-7),36,4.5931751806
+2013,PRI,Puerto Rico,NRI,Networked Readiness Index (1-7),36,4.5520117933
+2014,PRI,Puerto Rico,NRI,Networked Readiness Index (1-7),41,4.5417652426
+2012,PRT,Portugal,NRI,Networked Readiness Index (1-7),33,4.6290379086
+2013,PRT,Portugal,NRI,Networked Readiness Index (1-7),33,4.6670780617
+2014,PRT,Portugal,NRI,Networked Readiness Index (1-7),33,4.7254850295
+2012,PRY,Paraguay,NRI,Networked Readiness Index (1-7),111,3.2502429136
+2013,PRY,Paraguay,NRI,Networked Readiness Index (1-7),104,3.3724268043
+2014,PRY,Paraguay,NRI,Networked Readiness Index (1-7),102,3.4731200312
+2012,QAT,Qatar,NRI,Networked Readiness Index (1-7),28,4.8128718447
+2013,QAT,Qatar,NRI,Networked Readiness Index (1-7),23,5.1002450256
+2014,QAT,Qatar,NRI,Networked Readiness Index (1-7),23,5.2215494566
+2012,ROU,Romania,NRI,Networked Readiness Index (1-7),67,3.9005047694
+2013,ROU,Romania,NRI,Networked Readiness Index (1-7),75,3.8622943319
+2014,ROU,Romania,NRI,Networked Readiness Index (1-7),75,3.9480902054
+2012,RUS,Russian Federation,NRI,Networked Readiness Index (1-7),56,4.0174430429
+2013,RUS,Russian Federation,NRI,Networked Readiness Index (1-7),54,4.1261548044
+2014,RUS,Russian Federation,NRI,Networked Readiness Index (1-7),50,4.3039300687
+2012,RWA,Rwanda,NRI,Networked Readiness Index (1-7),82,3.7001563626
+2013,RWA,Rwanda,NRI,Networked Readiness Index (1-7),88,3.6816577789
+2014,RWA,Rwanda,NRI,Networked Readiness Index (1-7),85,3.7795299956
+2012,SAU,Saudi Arabia,NRI,Networked Readiness Index (1-7),34,4.6167367337
+2013,SAU,Saudi Arabia,NRI,Networked Readiness Index (1-7),31,4.8180385752
+2014,SAU,Saudi Arabia,NRI,Networked Readiness Index (1-7),32,4.7839773696
+2012,SEN,Senegal,NRI,Networked Readiness Index (1-7),100,3.4155681869
+2013,SEN,Senegal,NRI,Networked Readiness Index (1-7),107,3.3340951009
+2014,SEN,Senegal,NRI,Networked Readiness Index (1-7),114,3.296411631
+2012,SGP,Singapore,NRI,Networked Readiness Index (1-7),2,5.856074152
+2013,SGP,Singapore,NRI,Networked Readiness Index (1-7),2,5.9607767641
+2014,SGP,Singapore,NRI,Networked Readiness Index (1-7),2,5.9675434628
+2012,SLE,Sierra Leone,NRI,Networked Readiness Index (1-7),,
+2013,SLE,Sierra Leone,NRI,Networked Readiness Index (1-7),143,2.5254282929
+2014,SLE,Sierra Leone,NRI,Networked Readiness Index (1-7),134,2.8506422022
+2012,SLV,El Salvador,NRI,Networked Readiness Index (1-7),103,3.3795988358
+2013,SLV,El Salvador,NRI,Networked Readiness Index (1-7),93,3.5346181952
+2014,SLV,El Salvador,NRI,Networked Readiness Index (1-7),98,3.6298063188
+2012,SRB,Serbia,NRI,Networked Readiness Index (1-7),85,3.6431799774
+2013,SRB,Serbia,NRI,Networked Readiness Index (1-7),87,3.6982888593
+2014,SRB,Serbia,NRI,Networked Readiness Index (1-7),80,3.8827278184
+2012,SUR,Suriname,NRI,Networked Readiness Index (1-7),121,2.9850889755
+2013,SUR,Suriname,NRI,Networked Readiness Index (1-7),117,3.1269617423
+2014,SUR,Suriname,NRI,Networked Readiness Index (1-7),113,3.302756934
+2012,SVK,Slovak Republic,NRI,Networked Readiness Index (1-7),64,3.93519644
+2013,SVK,Slovak Republic,NRI,Networked Readiness Index (1-7),61,3.954659308
+2014,SVK,Slovak Republic,NRI,Networked Readiness Index (1-7),59,4.1151933257
+2012,SVN,Slovenia,NRI,Networked Readiness Index (1-7),37,4.5841618399
+2013,SVN,Slovenia,NRI,Networked Readiness Index (1-7),37,4.5335800574
+2014,SVN,Slovenia,NRI,Networked Readiness Index (1-7),36,4.5972060723
+2012,SWE,Sweden,NRI,Networked Readiness Index (1-7),1,5.9405893025
+2013,SWE,Sweden,NRI,Networked Readiness Index (1-7),3,5.9095264644
+2014,SWE,Sweden,NRI,Networked Readiness Index (1-7),3,5.9299052098
+2012,SWZ,Swaziland,NRI,Networked Readiness Index (1-7),136,2.6959146159
+2013,SWZ,Swaziland,NRI,Networked Readiness Index (1-7),136,2.6925208142
+2014,SWZ,Swaziland,NRI,Networked Readiness Index (1-7),126,3.0030981645
+2012,SYC,Seychelles,NRI,Networked Readiness Index (1-7),,
+2013,SYC,Seychelles,NRI,Networked Readiness Index (1-7),79,3.8033922334
+2014,SYC,Seychelles,NRI,Networked Readiness Index (1-7),66,4.0228429668
+2012,SYR,Syria,NRI,Networked Readiness Index (1-7),129,2.8539379177
+2013,SYR,Syria,NRI,Networked Readiness Index (1-7),,
+2014,SYR,Syria,NRI,Networked Readiness Index (1-7),,
+2012,TCD,Chad,NRI,Networked Readiness Index (1-7),138,2.5530368588
+2013,TCD,Chad,NRI,Networked Readiness Index (1-7),142,2.532810037
+2014,TCD,Chad,NRI,Networked Readiness Index (1-7),148,2.2237677956
+2012,THA,Thailand,NRI,Networked Readiness Index (1-7),77,3.7843244002
+2013,THA,Thailand,NRI,Networked Readiness Index (1-7),74,3.8639498426
+2014,THA,Thailand,NRI,Networked Readiness Index (1-7),67,4.0064705761
+2012,TJK,Tajikistan,NRI,Networked Readiness Index (1-7),114,3.1856846686
+2013,TJK,Tajikistan,NRI,Networked Readiness Index (1-7),112,3.2909151571
+2014,TJK,Tajikistan,NRI,Networked Readiness Index (1-7),,
+2012,TLS,Timor-leste,NRI,Networked Readiness Index (1-7),132,2.8369987759
+2013,TLS,Timor-leste,NRI,Networked Readiness Index (1-7),134,2.7241998084
+2014,TLS,Timor-leste,NRI,Networked Readiness Index (1-7),141,2.6913273904
+2012,TTO,Trinidad and Tobago,NRI,Networked Readiness Index (1-7),60,3.9768644417
+2013,TTO,Trinidad and Tobago,NRI,Networked Readiness Index (1-7),72,3.8690930928
+2014,TTO,Trinidad and Tobago,NRI,Networked Readiness Index (1-7),71,3.9728957052
+2012,TUN,Tunisia,NRI,Networked Readiness Index (1-7),50,4.1164906565
+2013,TUN,Tunisia,NRI,Networked Readiness Index (1-7),,
+2014,TUN,Tunisia,NRI,Networked Readiness Index (1-7),87,3.7711375232
+2012,TUR,Turkey,NRI,Networked Readiness Index (1-7),52,4.0723644737
+2013,TUR,Turkey,NRI,Networked Readiness Index (1-7),45,4.2224086796
+2014,TUR,Turkey,NRI,Networked Readiness Index (1-7),51,4.2966285544
+2012,TWN,"Taiwan, China",NRI,Networked Readiness Index (1-7),11,5.4815688201
+2013,TWN,"Taiwan, China",NRI,Networked Readiness Index (1-7),10,5.4683323814
+2014,TWN,"Taiwan, China",NRI,Networked Readiness Index (1-7),14,5.4717609096
+2012,TZA,Tanzania,NRI,Networked Readiness Index (1-7),123,2.9477027071
+2013,TZA,Tanzania,NRI,Networked Readiness Index (1-7),127,2.9210861427
+2014,TZA,Tanzania,NRI,Networked Readiness Index (1-7),125,3.0385120675
+2012,UGA,Uganda,NRI,Networked Readiness Index (1-7),110,3.2549262157
+2013,UGA,Uganda,NRI,Networked Readiness Index (1-7),110,3.3044132772
+2014,UGA,Uganda,NRI,Networked Readiness Index (1-7),115,3.2537455821
+2012,UKR,Ukraine,NRI,Networked Readiness Index (1-7),75,3.8461172499
+2013,UKR,Ukraine,NRI,Networked Readiness Index (1-7),73,3.86684305
+2014,UKR,Ukraine,NRI,Networked Readiness Index (1-7),81,3.8685868482
+2012,URY,Uruguay,NRI,Networked Readiness Index (1-7),44,4.2778474078
+2013,URY,Uruguay,NRI,Networked Readiness Index (1-7),52,4.1579625551
+2014,URY,Uruguay,NRI,Networked Readiness Index (1-7),56,4.2179846642
+2012,USA,United States,NRI,Networked Readiness Index (1-7),8,5.5609166258
+2013,USA,United States,NRI,Networked Readiness Index (1-7),9,5.5739352442
+2014,USA,United States,NRI,Networked Readiness Index (1-7),7,5.6138370753
+2012,VEN,Venezuela,NRI,Networked Readiness Index (1-7),107,3.3183460056
+2013,VEN,Venezuela,NRI,Networked Readiness Index (1-7),108,3.3299085658
+2014,VEN,Venezuela,NRI,Networked Readiness Index (1-7),106,3.3926930434
+2012,VNM,Vietnam,NRI,Networked Readiness Index (1-7),83,3.6993820774
+2013,VNM,Vietnam,NRI,Networked Readiness Index (1-7),84,3.7419042099
+2014,VNM,Vietnam,NRI,Networked Readiness Index (1-7),84,3.8362233133
+2012,YEM,Yemen,NRI,Networked Readiness Index (1-7),141,2.4132122921
+2013,YEM,Yemen,NRI,Networked Readiness Index (1-7),139,2.6250822812
+2014,YEM,Yemen,NRI,Networked Readiness Index (1-7),140,2.7311018914
+2012,ZAF,South Africa,NRI,Networked Readiness Index (1-7),72,3.8698347789
+2013,ZAF,South Africa,NRI,Networked Readiness Index (1-7),70,3.8743623387
+2014,ZAF,South Africa,NRI,Networked Readiness Index (1-7),70,3.9756260071
+2012,ZMB,Zambia,NRI,Networked Readiness Index (1-7),109,3.2565095702
+2013,ZMB,Zambia,NRI,Networked Readiness Index (1-7),115,3.194139246
+2014,ZMB,Zambia,NRI,Networked Readiness Index (1-7),110,3.3385381499
+2012,ZWE,Zimbabwe,NRI,Networked Readiness Index (1-7),124,2.9360330947
+2013,ZWE,Zimbabwe,NRI,Networked Readiness Index (1-7),116,3.1702577087
+2014,ZWE,Zimbabwe,NRI,Networked Readiness Index (1-7),117,3.2378150519

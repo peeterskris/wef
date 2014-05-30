@@ -1,22 +1,63 @@
 <html>
 <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <link rel="stylesheet" type="text/css" href="css/magicsuggest-min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bubbles.css">
     <link rel="stylesheet" type="text/css" href="css/tipsy.css">
+
+
 </head>
 <body>
-<div id="toggles" class="btn-group">
-    <button type="button" class="btn btn-default" data-view="global">Global</button>
-    <button type="button" class="btn btn-default" data-view="region">Show by region</button>
-    <button type="button" class="btn btn-default" data-view="incomegroup">Show by income group</button>
-</div>
-<div>
-    <svg id="chart"></svg>
+<div class="container">
+    <h1>Network Readiness Index</h1>
+    <p>The Networked Readiness Index measures, on a scale from 1 (worst) to 7 (best), the performance of 148 economies in
+    leveraging information and communications technologies to boost competitiveness and well-being.</p>
+
+    <p><small><strong>How to read this chart:</strong>   Each circle on this graph represents a country. The size of the circle shows the
+        population size. The color of
+        each circle and their position on the X shows their NRI Index. </small></p>
+
+    <div id="controlpanel" class="row">
+        <div id="toggles" class="col-md-4 btn-group">
+            <button type="button" class="btn btn-default global" data-view="global">Global</button>
+            <button type="button" class="btn btn-default region" data-view="region">Region</button>
+            <button type="button" class="btn btn-default incomegroup" data-view="incomegroup">Income group</button>
+        </div>
+
+        <div id="years" class="col-md-3 btn-group">
+            <button type="button" class="btn btn-default 2012" data-view="2012">2012</button>
+            <button type="button" class="btn btn-default 2013" data-view="2013">2013</button>
+            <button type="button" class="btn btn-default 2014" data-view="2014">2014</button>
+        </div>
+
+
+        <div class="col-md-5 btn-group">
+            <input id="countries" class="form-control" name="countries[]" style="height: auto;"/>
+        </div>
+
+        <!--<div  class="col-md-3">-->
+            <!--<div class="btn-group">-->
+                <!--<select id="countries" class="form-control">-->
+                    <!--<option value="NONE"></option>-->
+                <!--</select>-->
+                <!--<span id="searchclear" class="glyphicon glyphicon-remove"></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="row">
+        <svg id="chart"></svg>
+    </div>
+        <small>Source: <a href="http://www.weforum.org/issues/global-information-technology">World Economic Forum</a></small>
+    </p>
 </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.tipsy.js"></script>
     <script src="js/d3.min.js"></script>
     <script src="js/queue.v1.min.js"></script>
+    <script src="js/magicsuggest-min.js"></script>
     <script src="js/bubbles.js"></script>
 
 </body>

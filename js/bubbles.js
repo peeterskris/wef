@@ -1,14 +1,20 @@
 var gBiggestFirst = true; //should largest circles be added first?
 var gxScale, grScale, gcolorScale;
 var gDefaultHeight = 400;
-var gWidth = 800;
+var gLabelMargin = 150;
+var gWidth = 700;
 var gBubbleHeight = 70;
 var gInitialPosition = gBubbleHeight;
-var gMaxRadius = 20;
-var gData = [];
-var gRegions = {};
-var gIncomegroups = {};
+var gMaxRadius = 18;
 var gCurrentView = "global";
+var gCurrentYear = 2014;
+var gReferenceYear = 2014;
+var gData = [];
+var gRegions = d3.map();
+var gIncomegroups = d3.map();
+var gCountriesByRegion = {};
+var gGlobal = d3.map({"Global": 0});
+var gCountryList = {};
 
 window.onload=function(){
     queue()
@@ -23,130 +29,86 @@ function ready(error, gitr, population, countries) {
     gData = buildBubbleArray(data);
     sortRegionsAndIncomegroups();
     showVisualisation(gData);
+
+    loadButtons();
+}
+
+function loadButtons(){
+    $("#toggles ." + gCurrentView).addClass("active");
+    $("#years ." + gCurrentYear).addClass("active");
+    $("#bubbles").addClass("highlight");
     d3.selectAll("#toggles button[data-view]")
       .datum(function(d) { return this.getAttribute("data-view"); })
       .on("click", transitionView);
-}
 
-function showVisualisation(data){
-    var svg = d3.select("svg");//.style("height", gDefaultHeight);
+    d3.selectAll("#bubbles circle")
+//          .datum(function(d) { return this.getAttribute("class"); })
+          .on("click", selectCountry);
 
-    var axes = svg.append("g")
-            .attr("id", "axes")
-            .attr("transform", "translate(0," + gInitialPosition + ")")
-    var bubbleLine = svg.append("g")
-            .attr("id", "bubbles")
-            .attr("transform", "translate(0," + gInitialPosition + ")")
+    d3.selectAll("#years button[data-view]")
+          .datum(function(d) { return this.getAttribute("data-view"); })
+          .on("click", transitionYear);
 
-    buildLines(axes);
-    showBubbles(data,bubbleLine);
-}
+    gCountryList = $('#countries').magicSuggest({
+            allowFreeEntries: false,
+            data: getCountryList(),
+            valueField: 'code',
+            displayField: 'name',
+            placeholder: 'Search countries',
+            maxSelection: null
+        });
 
-function sortRegionsAndIncomegroups(){
-     var regions = d3.nest()
-          .key(function(d) { return d.properties.country.region; })
-          .entries(gData)
-          .sort(sortByX);
-
-    var incomegroups = d3.nest()
-        .key(function(d) { return d.properties.country.incomegroup; })
-        .entries(gData)
-        .sort(sortByX);
-
-    regions.forEach(function(level, index){
-        gRegions[level.key] = index;
-    });
-
-    incomegroups.forEach(function(level, index){
-        gIncomegroups[level.key] = index;
+    $(gCountryList).on('selectionchange', function(e,m){
+      highlightCountries(this.getValue());
     });
 }
 
-function sortByX(a,b){
-    var aSum = 0, bSum = 0;
-    a.values.forEach(function(d){aSum+=d.x;});
-    b.values.forEach(function(d){bSum+=d.x;});
-    return bSum / b.values.length - aSum / a.values.length ;
-}
-function buildBubbleArray(data){
-    var nri =  data.metrics.NRI[2014];
-    nri = nri.sort(
-        gBiggestFirst?
-            function(a,b){return b.country.population - a.country.population;} :
-            function(a,b){return a.country.population - b.country.population;}
-        )
-
-    var maxX = d3.max(nri, function(d) { return parseFloat(d.value); });
-    var minX = d3.min(nri, function(d) { return parseFloat(d.value); });
-    var maxR = d3.max(nri, function(d) { return parseInt(d.country.population); });
-    var marginX = (maxX-minX)*0.02;
-    var padding = 2; //space in pixels between circles
-
-    var xScale = d3.scale.linear()
-        .domain([minX-marginX,maxX+marginX])
-        .range([0,gWidth]);
-
-    var rScale = d3.scale.sqrt()
-        //make radius proportional to square root of data r
-        .domain([0,maxR])
-        .range([1,gMaxRadius]);
-
-    var colorScale = d3.scale.linear()
-        .domain([2, (maxX+2)/2, maxX])
-        .range(["#d73027", "#ffffbf", "#1a9850"]);
-
-    gxScale = xScale;
-    grScale = rScale;
-    gcolorScale = colorScale;
-
-    var quadtree = d3.geom.quadtree()
-                .x(function(d) { return xScale(d.x); })
-                .y(0)
-                .extent([[xScale(-1),0],[xScale(maxX)*1.2,0]]);
-
-  //  nriArray = buildBubbleArrays([{"key": "Overall", "values": nri}], quadtree)[0];
-//    gNriPerRegion = buildBubbleArrays(regions, quadtree);
-//    gNriPerIncome = buildBubbleArrays(incomes, quadtree);
-//    gData = {"overall": nriArray, "region": gNriPerRegion, "income": gNriPerIncome};
-    nriArray = buildBubbles(nri, quadtree);
-    return nriArray;
-}
-
-function buildBubbles(data, quadtree){
-    var result = [];
-    var padding = 2; //space in pixels between circles
-    var quadroot = quadtree([]);
-    var regionquadroots = {};
-    var incomegroupquadroots = {};
-    var bubbles = [];
-    data.forEach(function(item){
-        var value = parseFloat(item.value)
-        var region = item.country.region;
-        var incomegroup = item.country.incomegroup;
-        if(!(region in regionquadroots)) regionquadroots[region] = quadtree([]);
-        if(!(incomegroup in incomegroupquadroots)) incomegroupquadroots[incomegroup] = quadtree([]);
-
-        if(!isNaN(value)){
-            var d = {
-                "x": value,
-                "r": parseInt(item.country.population),
-                "properties": item,
-                "cx": gxScale(value)
-            };
-            var region_d = { "x": value, "r": parseInt(item.country.population) };
-            var incomegroup_d = { "x": value, "r": parseInt(item.country.population)};
-
-            d["cy"] = calculateOffset(0, quadroot, gxScale, grScale, padding)(d);
-            d["region_cy"] = calculateOffset(0, regionquadroots[region], gxScale, grScale, padding)(region_d);
-            d["incomegroup_cy"] = calculateOffset(0, incomegroupquadroots[incomegroup], gxScale, grScale, padding)(incomegroup_d);
-
-            bubbles.push(d);
-            quadroot.add(d);
-            regionquadroots[region].add(region_d);
-            incomegroupquadroots[incomegroup].add(incomegroup_d);
-        }
+function getCountryList(){
+    var countries = [];
+    gData.forEach(function(country){
+        countries.push({"code": country.code, "name": country.name});
     });
-    return bubbles;
+    countries = countries.sort(function(a,b){return a.name > b.name;});
+    return countries;
+}
+
+function loadCountries(){
+    var countries = [];
+    gCountriesByRegion.forEach(function (region){
+        region.values.forEach(function(country){
+            countries.push(country);
+        })
+    });
+    countries = countries.sort(function(a,b) { return a.name > b.name });
+    countries.forEach(function(country){
+        $("#countries").append('<option value="'+country.code+'">' + country.name + '</option>');
+    });
+}
+
+//function
+function highlightCountries(countries){
+    console.log("highlight country");
+
+    d3.selectAll("#bubbles circle").classed("focussed", false);
+    if(countries.length == 0)
+        d3.select("#bubbles").classed("highlight", false);
+    else{
+        d3.select("#bubbles").classed("highlight", true);
+        countries.forEach(function(code){
+            d3.selectAll("#bubbles circle." + code).classed("focussed", true);
+        });
+    }
+}
+
+function selectCountry(country){
+    var item = {"code": country.code, "name": country.name};
+    var list = gCountryList.getValue();
+    var index = list.indexOf(country.code);
+    if(index == -1)
+        gCountryList.addToSelection(item);
+    else
+        gCountryList.removeFromSelection(item);
+
 }
 
 function merge(gitr, pop, countriesInfo) {
@@ -170,32 +132,175 @@ function merge(gitr, pop, countriesInfo) {
         var year = item.Edition;
         var metric = item.GLOBAL_ID;
 
-        if(!(year in countries[code])){
-            countries[code][year] = {};
-        }
         if(!(metric in metrics)){
-            metrics[metric] = {"id": metric, "label": item.Series_with_units}
+            metrics[metric] = {"id": metric, "label": item.Series_with_units, "years" : {}}
         }
-        if(!(year in metrics[metric])){
-            metrics[metric][year] = []
+        if(!(year in metrics[metric]["years"])){
+            metrics[metric]["years"][year] = []
         }
 
-        countries[code][year][metric] = {
-            "id": metric,
+        element = {
+            //"id": metric,
             "value": item.Value,
             "rank": item.Rank,
             "country": countries[code],
-            "label": item.Series_with_units
+            //"label": item.Series_with_units
         }
-        metrics[metric][year].push(countries[code][year][metric]);
+        metrics[metric]["years"][year].push(element);
     });
 
     return {"countries": countries, "metrics": metrics};
 }
 
-function buildLines(axes){
-    var nrRegions = Object.size(gRegions);
-    var nrIncomeGroups = Object.size(gIncomegroups);
+function showVisualisation(data){
+    var svg = d3.select("svg");//.style("height", gDefaultHeight);
+
+    var labels = svg.append("g")
+        .attr("id", "labels")
+        .attr("transform", "translate(0," + gInitialPosition + ")")
+    var axes = svg.append("g")
+        .attr("id", "axes")
+        .attr("transform", "translate(" + gLabelMargin + "," + gInitialPosition + ")")
+    var bubbleLine = svg.append("g")
+        .attr("id", "bubbles")
+        .attr("transform", "translate(" + gLabelMargin + "," + gInitialPosition + ")")
+    var legend = svg.append("g")
+        .attr("id", "legend");
+        //.attr("transform", "translate(" + gLabelMargin + "," + (gInitialPosition+gBubbleHeight) + ")");
+    showLabels(labels);
+    showLines(axes);
+    showBubbles(data, bubbleLine);
+   // showLegend(legend);
+}
+
+function sortRegionsAndIncomegroups(){
+     var regions = d3.nest()
+          .key(function(d) { return d[gReferenceYear].properties.country.region; })
+          .entries(gData)
+          .sort(sortByX);
+
+    var incomegroups = d3.nest()
+        .key(function(d) { return d[gReferenceYear].properties.country.incomegroup; })
+        .entries(gData)
+        .sort(sortByX);
+
+    regions.forEach(function(level, index){
+        gRegions.set(level.key,index);
+    });
+
+    incomegroups.forEach(function(level, index){
+        gIncomegroups.set(level.key,index);
+    });
+
+    gCountriesByRegion = regions;
+}
+
+function sortByX(a,b){
+    var aSum = 0, bSum = 0;
+    a.values.forEach(function(d){aSum+=d[gCurrentYear].x;});
+    b.values.forEach(function(d){bSum+=d[gCurrentYear].x;});
+    return bSum / b.values.length - aSum / a.values.length ;
+}
+
+function buildScales(data){
+    var nri =  data.metrics.NRI.years[gReferenceYear];
+    nri = nri.sort(
+        gBiggestFirst?
+            function(a,b){return b.country.population - a.country.population;} :
+            function(a,b){return a.country.population - b.country.population;}
+        )
+
+    var maxX = d3.max(nri, function(d) { return parseFloat(d.value); });
+    var minX = d3.min(nri, function(d) { return parseFloat(d.value); });
+    var maxR = d3.max(nri, function(d) { return parseInt(d.country.population); });
+    var marginX = (maxX-minX)*0.02;
+
+
+    var xScale = d3.scale.linear()
+        .domain([minX-marginX,maxX+marginX])
+        .range([0,gWidth]);
+
+    var rScale = d3.scale.sqrt()
+        //make radius proportional to square root of data r
+        .domain([1,maxR])
+        .range([1,gMaxRadius]);
+
+    var colorScale = d3.scale.linear()
+        .domain([2, (maxX+2)/2, maxX])
+        .range(["#d73027", "#ffffbf", "#1a9850"]);
+
+    gxScale = xScale;
+    grScale = rScale;
+    gcolorScale = colorScale;
+}
+
+function buildBubbleArray(data){
+    buildScales(data);
+    var nri = data.metrics.NRI;
+    var result = d3.map();
+
+    for(year in nri.years){
+        result = buildBubbles(nri.years[year], result, year);
+    }
+    return result.values();
+}
+
+function buildBubbles(data,result, year){
+    data = data.sort(
+        gBiggestFirst?
+            function(a,b){return b.country.population - a.country.population;} :
+            function(a,b){return a.country.population - b.country.population;}
+        )
+    var maxX = d3.max(data, function(d) { return parseFloat(d.value); });
+    var quadtree = d3.geom.quadtree()
+            .x(function(d) { return gxScale(d.x); })
+            .y(0)
+            .extent([[gxScale(-1),0],[gxScale(maxX)*1.2,0]]);
+
+    var padding = 2; //space in pixels between circles
+    var quadroot = quadtree([]);
+    var regionquadroots = {};
+    var incomegroupquadroots = {};
+    var bubbles = [];
+    data.forEach(function(item){
+        var value = parseFloat(item.value)
+        var region = item.country.region;
+        var incomegroup = item.country.incomegroup;
+        if(!(region in regionquadroots)) regionquadroots[region] = quadtree([]);
+        if(!(incomegroup in incomegroupquadroots)) incomegroupquadroots[incomegroup] = quadtree([]);
+
+        if(isNaN(value)) value = 0;
+
+        var d = {
+            "x": value,
+            "r": parseInt(item.country.population),
+            "properties": item,
+            "cx": gxScale(value)
+        };
+        var region_d = { "x": value, "r": parseInt(item.country.population) };
+        var incomegroup_d = { "x": value, "r": parseInt(item.country.population)};
+
+        d["cy"] = calculateOffset(0, quadroot, gxScale, grScale, padding)(d);
+        d["region_cy"] = calculateOffset(0, regionquadroots[region], gxScale, grScale, padding)(region_d);
+        d["incomegroup_cy"] = calculateOffset(0, incomegroupquadroots[incomegroup], gxScale, grScale, padding)(incomegroup_d);
+
+        quadroot.add(d);
+        regionquadroots[region].add(region_d);
+        incomegroupquadroots[incomegroup].add(incomegroup_d);
+
+
+        if(!result.has(item.country.code)){
+            result.set(item.country.code, item.country);
+        }
+        var element = result.get(item.country.code);
+        element[year] = d;
+    });
+    return result;
+}
+
+function showLines(axes){
+    var nrRegions = gRegions.keys().length;
+    var nrIncomeGroups = gIncomegroups.keys().length;
     var nrLines = Math.max(nrRegions, nrRegions);
 
     for(var i =0;i<nrLines;i++){
@@ -213,7 +318,84 @@ function buildLines(axes){
             //.attr("class", i<nrRegions ? "region ":"" + i<nrIncomeGroups ? "incomegroup ":"" + i==0?"global":"");
     }
 }
-function showLines(axes, view){
+
+function showLabels(labels){
+    transitionLabels(labels, "global", false);
+}
+
+function transitionLabels(labels, view, delay){
+    var data = [];
+    switch(view) {
+        case "region":
+            data = gRegions.keys();
+            break;
+        case "incomegroup":
+            data = gIncomegroups.keys();
+            break;
+        default:
+            data = gGlobal.keys();
+    }
+
+    labels = labels
+        .selectAll("text")
+        .data(data, function(d) { return d; })
+
+    labels.exit().transition().duration(500).style("opacity", 0).remove();
+
+    labels.enter()
+        .append("text")
+        .attr("y", function(d,i){ return gBubbleHeight*i; })
+        .text(function(d) {return d;})
+        .style("opacity", 0)
+        .transition()
+        .delay(delay?500:0)
+        .duration(500)
+        .style("opacity", 1);
+}
+
+function showLegend(legend, view){
+
+    var height = getSvgHeight(view);
+    legend = legend.attr("transform", "translate(" + gLabelMargin + "," + height + ")");
+
+    legend.append("text")
+        //.attr("x", 0)
+        .style("text-anchor", "end")
+        .style("font", "bold 9px sans-serif")
+        .text("LEGEND");
+
+    var gColor = g.append("g")
+          .attr("class", "key-color")
+          .attr("transform", "translate(140,-7)");
+
+      gColor.selectAll("rect")
+          .data(gcolorScale.range().map(function(d, i) {
+            return {
+              x0: i ? x(z.domain()[i - 1]) : x.range()[0],
+              x1: i < 4 ? x(z.domain()[i]) : x.range()[1],
+              z: d
+            };
+          }))
+        .enter().append("rect")
+          .attr("height", 8)
+          .attr("x", function(d) { return d.x0; })
+          .attr("width", function(d) { return d.x1 - d.x0; })
+          .style("fill", function(d) { return d.z; });
+}
+
+function transitionLegend(legend, view){
+    var duration = 1000;
+    var currentHeight = getSvgHeight(gCurrentView);
+    var height = getSvgHeight(view);
+    var heightDuration = height < currentHeight ? duration *2 : duration;
+//    legend =
+        legend
+          .transition()
+          .duration(heightDuration)
+          .attr("transform", "translate(" + gLabelMargin + "," + height + ")");
+}
+
+function transitionLines(axes, view){
 
     axes.selectAll(".axis").transition().duration(500)
         .style("opacity", 0);
@@ -224,10 +406,11 @@ function showLines(axes, view){
 function getNrBubbleCharts(view){
     switch(view) {
     case "region":
-        return Object.size(gRegions);
+        return gRegions.keys().length;
         break;
     case "incomegroup":
-        return Object.size(gIncomegroups);
+        return gIncomegroups.keys().length;
+        break;
     default:
         return 1;
     }
@@ -250,15 +433,12 @@ function showBubbles(data, bubbleLine){
         .data(data)
         .enter()
         .append("circle")
-        .attr("r", function(d){ return grScale(d.r);})
-        .attr("fill", function(d){ return gcolorScale(d.x); })
-
-        .attr("cx", function(d){ return d.cx; })
-        //.attr("cy", 0)
-        //.transition().delay(i).duration(1000)
-        //.transition().duration(1500)
-        .attr("cy", function(d){ return d.cy; });
-
+        .attr("r", function(d){ return grScale(d[gCurrentYear].r);})
+        .attr("fill", function(d){ return gcolorScale(d[gCurrentYear].x); })
+        .attr("cx", function(d){ return d[gCurrentYear].cx; })
+        .attr("cy", function(d){ return d[gCurrentYear].cy; })
+        .attr("class", function(d){
+                return d[year].properties.country.code });
 
         $('svg circle').tipsy({
             gravity: function(){
@@ -272,52 +452,81 @@ function showBubbles(data, bubbleLine){
             },
             html: true,
             title: function() {
-              var d = this.__data__, c = gcolorScale(parseFloat(d.x));
+              var d = this.__data__, c = gcolorScale(parseFloat(d[gCurrentYear].x));
+              var population = d3.format(",");
               return '<div class="tipsyinfo">'
-                   + '  <div class="tipsyrow noborder"><div class="tipsylabel">Country</div><div class="value">' + d.properties.country.name + '</div></div>'
-                   + '  <div class="tipsyrow"><div class="tipsylabel">Population</div><div class="value">' + d.properties.country.population  + '</div></div>'
-                   + '  <div class="tipsyrow"><div class="tipsylabel">Region</div><div class="value">' + d.properties.country.region  + '</div></div>'
-                   + '  <div class="tipsyrow"><div class="tipsylabel">Income group</div><div class="value">' + d.properties.country.incomegroup  + '</div></div>'
-                   + '  <div class="tipsyrow"><div class="tipsylabel">Value</div><div class="value">' + d.x + '</div></div>'
+                   + '  <div class="tipsyrow noborder"><div class="tipsylabel">Country</div><div class="value">' + d[gCurrentYear].properties.country.name + '</div></div>'
+                   + '  <div class="tipsyrow"><div class="tipsylabel">Population</div><div class="value">' + population(d[gCurrentYear].properties.country.population)  + '</div></div>'
+                   + '  <div class="tipsyrow"><div class="tipsylabel">Region</div><div class="value">' + d[gCurrentYear].properties.country.region  + '</div></div>'
+                   + '  <div class="tipsyrow"><div class="tipsylabel">Income group</div><div class="value">' + d[gCurrentYear].properties.country.incomegroup  + '</div></div>'
+                   + '  <div class="tipsyrow"><div class="tipsylabel">NRI score</div><div class="value">' + d3.round(d[gCurrentYear].x,3) + '</div></div>'
                    + '</div>'
             }
         })
+}
 
+function transitionYear(year){
+    if(year == gCurrentYear)
+        return;
+    $("#years ." + gCurrentYear).removeClass("active");
+    $("#years ." + year).addClass("active");
 
+    var svg = d3.select("svg");
+    var duration = 1000;
+    transitionCircles(gCurrentView, year, duration,false);
+    gCurrentYear = year;
 }
 
 function transitionView(view){
     if(view == gCurrentView)
         return;
+
+    $("#toggles ." + gCurrentView).removeClass("active");
+    $("#toggles ." + view).addClass("active");
+
     var svg = d3.select("svg");
     var duration = 1000;
+//    var currentHeight = getSvgHeight(gCurrentView);
+//    var height = getSvgHeight(view);
+//    var heightDuration = height < currentHeight ? duration *2 : duration;
+//       svg
+//          .transition()
+//          .duration(heightDuration)
+//          .style("height", height + "px");
 
-    var currentHeight = getSvgHeight(gCurrentView);
-    var height = getSvgHeight(view);
-    var heightDuration = height < currentHeight ? duration *2 : duration;
-       svg
-          .transition()
-          .duration(heightDuration)
-          .style("height", height + "px");
+    transitionLines(svg.select("#axes"), view);
+    transitionLabels(svg.select("#labels"), view, true);
+    transitionCircles(view, gCurrentYear, duration, true);
+   // transitionLegend(svg.select("#legend"), view);
+    gCurrentView = view;
+}
 
-    showLines(svg.select("#axes"), view);
+function transitionCircles(view, year, duration, delay){
+    var svg = d3.select("svg");
     circles = svg.selectAll("circle")
         .data(gData)
         .transition()
         .duration(duration)
-        .delay(function(d){ return (6-d.x)*200});
+        .delay(function(d){ return delay?(d[year].x-2)*200:0})
+        .attr("cx", function(d){return d[year].cx })
+        .attr("fill", function(d){ return gcolorScale(d[year].x); });
 
     if(view == "region"){
-        circles.attr("cy", function(d){return (gRegions[d.properties.country.region]+1)*(gBubbleHeight) - gInitialPosition + d.region_cy  });
+        circles
+            .attr("cy", function(d){
+                var axisIndex = gRegions.get(d[year].properties.country.region);
+                var axisPos = (axisIndex+1)*gBubbleHeight - gInitialPosition;
+                return axisPos + d[year].region_cy;
+         });
     }
     else if(view == "incomegroup"){
-        circles.attr("cy", function(d){return (gIncomegroups[d.properties.country.incomegroup]+1)*(gBubbleHeight) - gInitialPosition + d.incomegroup_cy });
+        circles
+            .attr("cy", function(d){ return (gIncomegroups.get(d[year].properties.country.incomegroup)+1)*(gBubbleHeight) - gInitialPosition + d[year].incomegroup_cy });
     }
     else if(view == "global"){
-        circles.attr("cy", function(d){return d.cy });
+        circles
+            .attr("cy", function(d){return d[year].cy });
     }
-
-    gCurrentView = view;
 }
 
 function getSvgHeight(view){
