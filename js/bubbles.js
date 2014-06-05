@@ -19,6 +19,7 @@ var gCountryList = {};
 var getMetricList = {};
 
 window.onload=function(){
+    $( "#screenshot" ).remove();
     queue()
         .defer(JSZipUtils.getBinaryContent, "data/gitr2014_web.csv.zip")
         .defer(d3.csv, "data/population.csv")
@@ -58,7 +59,7 @@ function loadButtons(data){
             data: getCountryList(),
             valueField: 'code',
             displayField: 'name',
-            placeholder: 'Search countries',
+            placeholder: 'Highlight countries',
             maxSelection: null
         });
 
@@ -497,13 +498,6 @@ function showBubbles(data, bubbleLine){
 }
 
 function transitionMetric(metric, highlight){
-//    $("#chart").empty();
-//    d3.select("#labels").remove();
-//    d3.select("#axes").remove();
-//    d3.select("#legend").remove();
-    //
-
-    //d3.select("#chart").transition().duration(500).style("opacity", 0).text('');
     $("#chart-title").text(data.metrics[metric].label);
 
     console.log(metric);
