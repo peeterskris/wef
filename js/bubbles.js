@@ -10,40 +10,44 @@ var gCurrentView = "global";
 var gCurrentYear = 2014;
 var gReferenceYear = 2014;
 var gData = [];
+var gAllData = [];
 var gRegions = d3.map();
 var gIncomegroups = d3.map();
 var gCountriesByRegion = {};
 var gGlobal = d3.map({"Global": 0});
 var gCountryList = {};
+var getMetricList = {};
 
 window.onload=function(){
     queue()
-        .defer(d3.csv, "data/gitr2014_nri.csv")
+        .defer(JSZipUtils.getBinaryContent, "data/gitr2014_web.csv.zip")
         .defer(d3.csv, "data/population.csv")
         .defer(d3.csv, "data/countries.csv")
         .await(ready);
 }
 
 function ready(error, gitr, population, countries) {
+    var zip = new JSZip(gitr);
+    gitr = zip.file("gitr2014_web.csv").asText();
+    gitr = d3.csv.parse(gitr);
     data = merge(gitr,population, countries);
-    gData = buildBubbleArray(data);
-    sortRegionsAndIncomegroups();
-    showVisualisation(gData);
+    gAllData = gData;
 
-    loadButtons();
+    gData = buildBubbleArray(data.metrics["NRI"]);
+    sortRegionsAndIncomegroups();
+    showVisualisation(gData, true);
+
+    loadButtons(data);
 }
 
-function loadButtons(){
+function loadButtons(data){
     $("#toggles ." + gCurrentView).addClass("active");
     $("#years ." + gCurrentYear).addClass("active");
-    $("#bubbles").addClass("highlight");
     d3.selectAll("#toggles button[data-view]")
       .datum(function(d) { return this.getAttribute("data-view"); })
       .on("click", transitionView);
 
-    d3.selectAll("#bubbles circle")
-//          .datum(function(d) { return this.getAttribute("class"); })
-          .on("click", selectCountry);
+
 
     d3.selectAll("#years button[data-view]")
           .datum(function(d) { return this.getAttribute("data-view"); })
@@ -61,6 +65,29 @@ function loadButtons(){
     $(gCountryList).on('selectionchange', function(e,m){
       highlightCountries(this.getValue());
     });
+
+
+    for(metric in data.metrics){
+        var text = data.metrics[metric].label;
+        if(text.indexOf("A.") == 0 || text.indexOf("B.") == 0 || text.indexOf("C.") == 0 || text.indexOf("D.") == 0) continue; //text = "-- " + text;
+        if(text.indexOf("Pillar") == 0) text = "&nbsp;&nbsp;" + text;
+        else if(text.indexOf("Networked Readiness Index") == 0)  text = text;
+        else text = "&nbsp;&nbsp;&nbsp;&nbsp;" + text;
+        $('#metrics ul').prepend('<li role="presentation"><a role="menuitem" tabindex="-1" data-view=' + metric + '>' + text + '</a></li>');
+
+        if(data.metrics[metric].label.indexOf("Pillar") == 0)
+            $('#metrics ul').prepend('<li role="presentation" class="divider"></li>');
+    }
+
+    d3.selectAll("#metrics ul a[data-view]")
+          .datum(function(d) { return this.getAttribute("data-view"); })
+          .on("click", transitionMetric);
+}
+
+function getMetricList(data){
+    for(metric in data){
+
+    }
 }
 
 function getCountryList(){
@@ -87,8 +114,6 @@ function loadCountries(){
 
 //function
 function highlightCountries(countries){
-    console.log("highlight country");
-
     d3.selectAll("#bubbles circle").classed("focussed", false);
     if(countries.length == 0)
         d3.select("#bubbles").classed("highlight", false);
@@ -140,11 +165,11 @@ function merge(gitr, pop, countriesInfo) {
         }
 
         element = {
-            //"id": metric,
+            "id": metric,
             "value": item.Value,
             "rank": item.Rank,
             "country": countries[code],
-            //"label": item.Series_with_units
+            "label": item.Series_with_units
         }
         metrics[metric]["years"][year].push(element);
     });
@@ -152,21 +177,25 @@ function merge(gitr, pop, countriesInfo) {
     return {"countries": countries, "metrics": metrics};
 }
 
-function showVisualisation(data){
+function showVisualisation(data, build){
     var svg = d3.select("svg");//.style("height", gDefaultHeight);
 
-    var labels = svg.append("g")
-        .attr("id", "labels")
-        .attr("transform", "translate(0," + gInitialPosition + ")")
-    var axes = svg.append("g")
-        .attr("id", "axes")
-        .attr("transform", "translate(" + gLabelMargin + "," + gInitialPosition + ")")
-    var bubbleLine = svg.append("g")
-        .attr("id", "bubbles")
-        .attr("transform", "translate(" + gLabelMargin + "," + gInitialPosition + ")")
-    var legend = svg.append("g")
-        .attr("id", "legend");
-        //.attr("transform", "translate(" + gLabelMargin + "," + (gInitialPosition+gBubbleHeight) + ")");
+    if(build){
+        var labels = svg.append("g")
+            .attr("id", "labels")
+            .attr("transform", "translate(0," + gInitialPosition + ")")
+        var axes = svg.append("g")
+            .attr("id", "axes")
+            .attr("transform", "translate(" + gLabelMargin + "," + gInitialPosition + ")")
+
+        var bubbleLine = svg.append("g")
+            .attr("id", "bubbles")
+            .attr("transform", "translate(" + gLabelMargin + "," + gInitialPosition + ")")
+        var legend = svg.append("g")
+            .attr("id", "legend");
+            //.attr("transform", "translate(" + gLabelMargin + "," + (gInitialPosition+gBubbleHeight) + ")");
+    }
+
     showLabels(labels);
     showLines(axes);
     showBubbles(data, bubbleLine);
@@ -175,12 +204,12 @@ function showVisualisation(data){
 
 function sortRegionsAndIncomegroups(){
      var regions = d3.nest()
-          .key(function(d) { return d[gReferenceYear].properties.country.region; })
+          .key(function(d) { return d.region; })
           .entries(gData)
           .sort(sortByX);
 
     var incomegroups = d3.nest()
-        .key(function(d) { return d[gReferenceYear].properties.country.incomegroup; })
+        .key(function(d) { return d.incomegroup; })
         .entries(gData)
         .sort(sortByX);
 
@@ -202,22 +231,23 @@ function sortByX(a,b){
     return bSum / b.values.length - aSum / a.values.length ;
 }
 
-function buildScales(data){
-    var nri =  data.metrics.NRI.years[gReferenceYear];
-    nri = nri.sort(
-        gBiggestFirst?
-            function(a,b){return b.country.population - a.country.population;} :
-            function(a,b){return a.country.population - b.country.population;}
-        )
+function buildScales(metric){
 
-    var maxX = d3.max(nri, function(d) { return parseFloat(d.value); });
-    var minX = d3.min(nri, function(d) { return parseFloat(d.value); });
-    var maxR = d3.max(nri, function(d) { return parseInt(d.country.population); });
-    var marginX = (maxX-minX)*0.02;
+    var maxX = Number.MIN_VALUE, minX = Number.MAX_VALUE;
+    for(year in metric.years){
+        var series = metric.years[year];
+        maxX = Math.max(maxX, d3.max(series, function(d) { return parseFloat(d.value); }));
+        minX = Math.min(minX, d3.min(series, function(d) { return parseFloat(d.value); }));
+    }
+    var series =  metric.years[gReferenceYear];
+//    var maxX = d3.max(nri, function(d) { return parseFloat(d.value); });
+//    var minX = d3.min(nri, function(d) { return parseFloat(d.value); });
+    var maxR = d3.max(series, function(d) { return parseInt(d.country.population); });
+    var marginX = (maxX-minX)*0.1;
 
 
     var xScale = d3.scale.linear()
-        .domain([minX-marginX,maxX+marginX])
+        .domain([minX,maxX+marginX])
         .range([0,gWidth]);
 
     var rScale = d3.scale.sqrt()
@@ -226,7 +256,7 @@ function buildScales(data){
         .range([1,gMaxRadius]);
 
     var colorScale = d3.scale.linear()
-        .domain([2, (maxX+2)/2, maxX])
+        .domain([minX, (maxX+minX)/2, maxX])
         .range(["#d73027", "#ffffbf", "#1a9850"]);
 
     gxScale = xScale;
@@ -236,11 +266,11 @@ function buildScales(data){
 
 function buildBubbleArray(data){
     buildScales(data);
-    var nri = data.metrics.NRI;
+    var metric = data;
     var result = d3.map();
 
-    for(year in nri.years){
-        result = buildBubbles(nri.years[year], result, year);
+    for(year in metric.years){
+        result = buildBubbles(metric.years[year], result, year);
     }
     return result.values();
 }
@@ -252,6 +282,7 @@ function buildBubbles(data,result, year){
             function(a,b){return a.country.population - b.country.population;}
         )
     var maxX = d3.max(data, function(d) { return parseFloat(d.value); });
+    var minX = d3.min(data, function(d) { return parseFloat(d.value); });
     var quadtree = d3.geom.quadtree()
             .x(function(d) { return gxScale(d.x); })
             .y(0)
@@ -269,12 +300,11 @@ function buildBubbles(data,result, year){
         if(!(region in regionquadroots)) regionquadroots[region] = quadtree([]);
         if(!(incomegroup in incomegroupquadroots)) incomegroupquadroots[incomegroup] = quadtree([]);
 
-        if(isNaN(value)) value = 0;
+        if(isNaN(value)) value = Math.min(minX *2, -1000);
 
         var d = {
             "x": value,
             "r": parseInt(item.country.population),
-            "properties": item,
             "cx": gxScale(value)
         };
         var region_d = { "x": value, "r": parseInt(item.country.population) };
@@ -294,6 +324,7 @@ function buildBubbles(data,result, year){
         }
         var element = result.get(item.country.code);
         element[year] = d;
+        element["metric"] = item.label;
     });
     return result;
 }
@@ -429,7 +460,7 @@ function showBubbles(data, bubbleLine){
     //Author name and link to this page is sufficient attribution.
 
     maxR = 0;
-    bubbleLine.selectAll("circle")
+    var svg = bubbleLine.selectAll("circle")
         .data(data)
         .enter()
         .append("circle")
@@ -437,8 +468,8 @@ function showBubbles(data, bubbleLine){
         .attr("fill", function(d){ return gcolorScale(d[gCurrentYear].x); })
         .attr("cx", function(d){ return d[gCurrentYear].cx; })
         .attr("cy", function(d){ return d[gCurrentYear].cy; })
-        .attr("class", function(d){
-                return d[year].properties.country.code });
+        .attr("class", function(d){ return d.code })
+        .on("click", selectCountry);
 
         $('svg circle').tipsy({
             gravity: function(){
@@ -455,14 +486,35 @@ function showBubbles(data, bubbleLine){
               var d = this.__data__, c = gcolorScale(parseFloat(d[gCurrentYear].x));
               var population = d3.format(",");
               return '<div class="tipsyinfo">'
-                   + '  <div class="tipsyrow noborder"><div class="tipsylabel">Country</div><div class="value">' + d[gCurrentYear].properties.country.name + '</div></div>'
-                   + '  <div class="tipsyrow"><div class="tipsylabel">Population</div><div class="value">' + population(d[gCurrentYear].properties.country.population)  + '</div></div>'
-                   + '  <div class="tipsyrow"><div class="tipsylabel">Region</div><div class="value">' + d[gCurrentYear].properties.country.region  + '</div></div>'
-                   + '  <div class="tipsyrow"><div class="tipsylabel">Income group</div><div class="value">' + d[gCurrentYear].properties.country.incomegroup  + '</div></div>'
-                   + '  <div class="tipsyrow"><div class="tipsylabel">NRI score</div><div class="value">' + d3.round(d[gCurrentYear].x,3) + '</div></div>'
+                   + '  <div class="tipsyrow noborder"><div class="tipsylabel">Country</div><div class="value">' + d.name + '</div></div>'
+                   + '  <div class="tipsyrow"><div class="tipsylabel">Population</div><div class="value">' + population(d.population)  + '</div></div>'
+                   + '  <div class="tipsyrow"><div class="tipsylabel">Region</div><div class="value">' + d.region  + '</div></div>'
+                   + '  <div class="tipsyrow"><div class="tipsylabel">Income group</div><div class="value">' + d.incomegroup  + '</div></div>'
+                   + '  <div class="tipsyrow"><div class="tipsylabel">Value</div><div class="value">' + d[gCurrentYear].x + '</div></div>'
                    + '</div>'
             }
         })
+}
+
+function transitionMetric(metric, highlight){
+//    $("#chart").empty();
+//    d3.select("#labels").remove();
+//    d3.select("#axes").remove();
+//    d3.select("#legend").remove();
+    //
+
+    //d3.select("#chart").transition().duration(500).style("opacity", 0).text('');
+    $("#chart-title").text(data.metrics[metric].label);
+
+    console.log(metric);
+    gData = buildBubbleArray(data.metrics[metric]);
+
+    transitionCircles(gCurrentView, gCurrentYear, 1000, true);
+   // sortRegionsAndIncomegroups();
+   // transitionLabels(svg.select("#labels"), gCurrentView, false);
+
+    showVisualisation(gData, false);
+    highlightCountries(gCountryList.getValue());
 }
 
 function transitionYear(year){
@@ -473,7 +525,7 @@ function transitionYear(year){
 
     var svg = d3.select("svg");
     var duration = 1000;
-    transitionCircles(gCurrentView, year, duration,false);
+    transitionCircles(gCurrentView, year, duration,true);
     gCurrentYear = year;
 }
 
@@ -507,21 +559,22 @@ function transitionCircles(view, year, duration, delay){
         .data(gData)
         .transition()
         .duration(duration)
-        .delay(function(d){ return delay?(d[year].x-2)*200:0})
+        //.delay(function(d){ return delay?(d[year].x-2)*200:0})
+        .delay(function(d){ return delay?gxScale(d[year].x):0})
         .attr("cx", function(d){return d[year].cx })
         .attr("fill", function(d){ return gcolorScale(d[year].x); });
 
     if(view == "region"){
         circles
             .attr("cy", function(d){
-                var axisIndex = gRegions.get(d[year].properties.country.region);
+                var axisIndex = gRegions.get(d.region);
                 var axisPos = (axisIndex+1)*gBubbleHeight - gInitialPosition;
                 return axisPos + d[year].region_cy;
          });
     }
     else if(view == "incomegroup"){
         circles
-            .attr("cy", function(d){ return (gIncomegroups.get(d[year].properties.country.incomegroup)+1)*(gBubbleHeight) - gInitialPosition + d[year].incomegroup_cy });
+            .attr("cy", function(d){ return (gIncomegroups.get(d.incomegroup)+1)*(gBubbleHeight) - gInitialPosition + d[year].incomegroup_cy });
     }
     else if(view == "global"){
         circles
@@ -632,7 +685,7 @@ function calculateOffset(maxR, quadroot, xScale, rScale, padding){
                 }
             }
             if(zeroPosValid){
-                //console.log('x axis is fine for ' + d.properties.country.name + ' ' + d.r);
+                //console.log('x axis is fine for ' + d.name + ' ' + d.r);
                 //return d.offset = 0;
             }
 
